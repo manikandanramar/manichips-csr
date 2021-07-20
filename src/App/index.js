@@ -36,7 +36,7 @@ class App extends PureComponent {
         return (
             <div className={styles.parent} >
                 <Helmet>
-                    <link rel="shortcut icon" href={assets.logo} />
+                    <link rel="shortcut icon" type="image/png" href={assets.logo} />
 
                     <meta name="robots" content="index, follow" />
 

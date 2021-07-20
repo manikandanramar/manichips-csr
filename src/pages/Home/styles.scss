@@ -342,6 +342,26 @@
             }
         }
 
+        .amazonSection {
+            .title {
+                @extend .superHead;
+                padding: 15px;
+                text-align: center;
+                border-bottom: 1px solid $white-creamy;
+            }
+
+            .links {
+                display: flex;
+                justify-content: center;
+                padding: 15px;
+                flex-wrap: wrap;
+    
+                iframe {
+                    margin: 15px;
+                }
+            }
+        }
+
         .feedback {
             background-color: $white;
             height: 100px;

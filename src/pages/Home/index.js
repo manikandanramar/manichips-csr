@@ -188,6 +188,17 @@ class Home extends PureComponent {
                         </table>
                     </div>
 
+                    {/* Section VIII */}
+                    <div className={styles.amazonSection} >
+                        <div className={styles.title} >Our Products on Amazon India</div>
+                        <div className={styles.links} >
+                            <iframe style={{ width: "120px", height: "240px"}} marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mani09f-21&language=en_IN&marketplace=amazon&region=IN&placement=B08FT2NJVT&asins=B08FT2NJVT&linkId=bf73a7874ace255982b49f4ce62c858c&show_border=true&link_opens_in_new_window=true"></iframe>
+                            <iframe style={{ width: "120px", height: "240px"}} marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mani09f-21&language=en_IN&marketplace=amazon&region=IN&placement=B094YJKKRL&asins=B094YJKKRL&linkId=2b1a34d350fdc4a9f1b2a2ebb7bd57fe&show_border=true&link_opens_in_new_window=true"></iframe>
+                            <iframe style={{ width: "120px", height: "240px"}} marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mani09f-21&language=en_IN&marketplace=amazon&region=IN&placement=B08X2XW7F7&asins=B08X2XW7F7&linkId=7be521578f19f80101292e2a67ce61b6&show_border=true&link_opens_in_new_window=true"></iframe>
+                            <iframe style={{ width: "120px", height: "240px"}} marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=mani09f-21&language=en_IN&marketplace=amazon&region=IN&placement=B088H4CQT8&asins=B088H4CQT8&linkId=8a18d844cc0b14cf4edac02ee16f030e&show_border=true&link_opens_in_new_window=true"></iframe>
+                        </div>
+                    </div>
+
                     {/* Buy Pop Up */}
                     {
                         this.state.buy
