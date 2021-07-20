@@ -65,7 +65,11 @@ module.exports = (env, argv) => {
         webpackConfig.mode = 'production';
         webpackConfig.plugins.push(new CopyPlugin({
             patterns: [
-              { from: "static", to: "static" }
+              { from: "static", to: "static" },
+              {
+                from: path.resolve("static/*.txt"),
+                to: "[name].[ext]"
+              }
             ],
           }))
 

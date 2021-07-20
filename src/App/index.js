@@ -36,25 +36,7 @@ class App extends PureComponent {
         return (
             <div className={styles.parent} >
                 <Helmet>
-                    <link rel="shortcut icon" type="image/png" href={assets.logo} />
-
-                    <meta name="robots" content="index, follow" />
-
-                    <title>Online Shopping Site for Snacks, Savouries, Banana Chips & More - Manichips</title>
-                    <meta name="description" content="India's biggest online shopping site for Banana Chips, Snacks, Savouries and more. Find the largest selection of premium quality snacks at best price in India."></meta>
-
-                    <meta name="og_title" property="og:title" content="Online Shopping Site for Snacks, Savouries, Banana Chips & More - Manichips"/>
-                    <meta property="og:description" content="India's biggest online shopping site for Banana Chips, Snacks, Savouries and more. Find the largest selection of premium quality snacks at best price in India." />
-                    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/manichips-server.appspot.com/o/preview-logo.jpg?alt=media&token=40acf473-f76a-4911-8eb7-302d5c446b4c" />
-                    <meta property="og:type" content="website" />
-                    <meta property="og:url" content="https://www.manichips.com/" />
-                    <meta property="og:site_name" content="Manichips" />
-
-                    <meta name="twitter:card" content="summary" /> 
-                    <meta name="twitter:site" content="@manichips" /> 
-                    <meta name="twitter:title" content="Online Shopping Site for Snacks, Savouries, Banana Chips & More - Manichips" /> 
-                    <meta name="twitter:description" content="India's biggest online shopping site for Banana Chips, Snacks, Savouries and more. Find the largest selection of premium quality snacks at best price in India." /> 
-                    <meta name="twitter:image" content="https://firebasestorage.googleapis.com/v0/b/manichips-server.appspot.com/o/preview-logo.jpg?alt=media&token=40acf473-f76a-4911-8eb7-302d5c446b4c" />
+                    
                 </Helmet>
                 {
                     festiveFlag

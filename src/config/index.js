@@ -26,7 +26,7 @@ module.exports = {
         { name: "LinkedIn", to: "https://linkedin.com/company/manichips" },
         // { name: "TikTok", to: "https://www.tiktok.com/@manichipsindia" }
     ],
-    copyright: "© manichips 2020, All Rights Reserved",
+    copyright: "© manichips 2021, All Rights Reserved",
     address: "TC 22/327-1, Santhi Bhavan, Attukal, Manacaud.P.O, Thiruvananthapuram, India - 695009",
     phone: "+91 7736342880",
     mail: "support@manichips.com",

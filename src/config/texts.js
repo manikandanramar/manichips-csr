@@ -121,7 +121,7 @@ module.exports = {
             para: "If you continue to use this site without taking action to prevent the storage of information, you are effectively agreeing to our Privacy and Cookies Policy. If we decide to change our privacy policy, we will post those changes on this page so that you are always aware of what information we collect, how we use it, and under what circumstances we disclose it."
         },
         {
-            head: "Privacy and Cookies Policy - last updated in March 2020.",
+            head: "Privacy and Cookies Policy - last updated in March 2021.",
             para: ""
         },
     ],
