@@ -1,0 +1,26 @@
+@import '../../styles/common.scss';
+
+.error {
+    max-width: 1012px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
+
+    .fourNotFour {
+        @extend .heading;
+        padding: 30px;
+    }
+
+    .fnfMessage {
+        @extend .normalText;
+        padding: 15px;
+    }
+
+    .fnfGo {
+        @extend .itIsLink;
+        @extend .roboText;
+        font-weight: bold;
+        padding: 15px;
+        color: $crispy-green;
+    }
+}

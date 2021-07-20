@@ -1,0 +1,40 @@
+// core colors
+$theme0: #46ceea;
+$theme1: #0575e6;
+$theme2: #8c959d;
+
+$shadow-color1: rgba(0,0,0,0.3);
+$shadow-color2: rgba(0,0,0,0.1);
+
+
+// common colors
+$white: #FFFFFF;
+$black: #000000;
+
+$some-black: #212121;
+
+$grey-light: #f2f2f2;
+$grey-bright: #c3c3c3;
+$crispy-green: #00b57a;
+$orange: #ff7600;
+$orange-some: #ff934b;
+$redish-orange: #ff5e62;
+$kinda-blue: #0664f7;
+$kinda-green: #00ba53;
+$green-lighter: #cbffc5;
+$blue-gloss: #2874f0;
+$kathripu: #8e07d3;
+$rich-dark-violet: #05044d;
+
+$white-gray: #fafafa;
+$white-creamy: #e7e8ed;
+
+//Shadows
+$tileShadow: 0 3px 15px rgba(0,0,0,.3);
+$cardShadow: 0 6.4px 14.4px 0 rgba(0, 0, 0, 0.3), 0 1.2px 3.6px 0 rgba(0, 0, 0, 0.3)!important;
+$mid-shadow: 0px 1px 3px 0px $shadow-color2;
+$pro-shadow: 0px 1px 3px 0px $shadow-color1;
+
+
+//gradients
+$overlayGradient: linear-gradient(to top right,rgba(0,0,0,.3),transparent);

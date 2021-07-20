@@ -1,0 +1,16 @@
+
+.slides {
+    overflow: hidden;
+
+    .slidesContainer {
+        .slideWrapper {
+            width: 100vw;
+            max-width: 1008px;
+            float: left;
+            
+            .slide {
+                width: 100%;
+            }
+        }
+    }
+}

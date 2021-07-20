@@ -1,0 +1,131 @@
+@import './variables.scss';
+
+.acrylic {
+    backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255,255,255,0.7);
+}
+
+.itIsLink {
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.text {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.heading {
+    @extend .text;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.subHead {
+    @extend .text;
+    font-size: 9px;
+    line-height: 9px;
+    font-weight: bold;
+}
+
+.superHead {
+    @extend .text;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;   
+}
+
+.simpleHead {
+    @extend .text;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.normalText {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.roboText {
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.roboMax {
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.fontStyles {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.acrylic-medium {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media print, screen and (min-width: 415px) {
+    .heading {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    
+    .subHead {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .superHead {
+        font-size: 24px;
+        line-height: 24px;  
+    }
+
+    .simpleHead {
+        font-size: 24px;
+        line-height: 24px; 
+    }
+
+    .normalText {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .roboMax {
+        font-size: 24px;
+    }
+}
+
+@media print, screen and (min-width: 768px) {
+    .heading {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    
+    .subHead {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .superHead {
+        font-size: 30px;
+        line-height: 30px;  
+    }
+
+    .normalText {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .roboMax {
+        font-size: 30px;
+    }
+}

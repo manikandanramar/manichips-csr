@@ -1,0 +1,126 @@
+@import '../../styles/common.scss';
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-width: 1012px;
+
+    .carouselTitleWrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin-top: 20px;
+
+        .carouselTitle {
+            @extend .fontStyles;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        .viewMoreLink {
+            @extend .text;
+            @extend .itIsLink;
+        }
+    }
+
+    .minimalTitle {
+        @extend .fontStyles;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 15px 0 0 20px;
+    }
+
+    .carouselContainer {
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        width: 100vw;
+        padding: 20px 0;
+        max-width: 1012px;
+    
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
+    
+        .carouselItems {
+            display: flex;
+            transition: transform .5s cubic-bezier(0,0,0.3, 1);
+            width: 100vw;
+            padding: 0 0 0 5px;
+        }
+    }
+}
+
+@media (hover :hover) {
+    .arrowButton {
+        position: absolute;
+        bottom: 0;
+        top: 64px;
+        width: 38px;
+        height: 122px;
+        background: hsla(0, 0%, 100%, .4);
+        -webkit-backdrop-filter: blur(10px) saturate(125%);
+        backdrop-filter: blur(10px) saturate(125%);
+        z-index: 2;
+        transition: all .1s ease-in-out;
+    }
+
+    .arrow {
+        border: solid $black;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 7px;
+      }
+      
+      .arrowRight {
+        @extend .arrow;
+        transform: rotate(-45deg);
+        margin: 50px 8px;
+      }
+      
+      .arrowLeft {
+        @extend .arrow;
+        transform: rotate(135deg);
+        margin: 50px 13px;
+      }
+
+    .carousel {
+        .left {
+            @extend .arrowButton;
+            left: -50px;
+            border-radius: 0 5px 5px 0;
+
+            &.minimal {
+                top: 74px;
+            }
+
+            span {
+                @extend .arrowLeft;
+            }
+        }
+
+        .right {
+            @extend .arrowButton;
+            right: -50px;
+            border-radius: 5px 0 0 5px;
+            
+            &.minimal {
+                top: 74px;
+            }
+
+            span {
+                @extend .arrowRight;
+            }
+        }
+
+        &:hover {
+            .left {
+                left: 0;
+            }
+
+            .right {
+                right: 0;
+            }
+        }
+    }
+}

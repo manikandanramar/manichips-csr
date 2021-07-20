@@ -1,0 +1,63 @@
+@import '../../styles/common.scss';
+
+.feedbackWrapper {
+    display: grid;
+    padding-bottom: 50px;
+
+    .feedbackCover {
+        margin: 0 auto;
+        width: 640px;
+        max-width: 90vw;
+    }
+
+    .feedbackFrame {
+        width: 100%;
+        height: 2400px;
+    }
+
+    .feedTitle {
+        @extend .simpleHead;
+        margin: 0 auto;
+        width: 640px;
+        max-width: 90vw;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $grey-bright;
+        text-align: center;
+        color: $redish-orange;
+    }
+
+    .feedCOM {
+        @extend .normalText;
+        margin: 0 auto;
+        width: 640px;
+        max-width: 90vw;
+        display: flex;
+        justify-content: space-around;
+
+        .channelLink {
+            padding: 15px;
+            text-decoration: none;
+            color: $kinda-blue;
+        }
+
+        .channelImage {
+            width: 100px;
+        }
+    }
+}
+
+@media print, screen and (max-width: 415px) {
+    .feedbackWrapper {
+        .feedbackFrame {
+            height: 2700px;
+        }
+    }
+}
+
+@media print, screen and (min-width: 416px) and (max-width: 640px) {
+    .feedbackWrapper {
+        .feedbackFrame {
+            height: 2500px;
+        }
+    }
+}

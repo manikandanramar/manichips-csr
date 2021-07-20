@@ -1,0 +1,10 @@
+@import '../../styles/common.scss';
+
+.link {
+    @extend .text;
+    text-decoration: none;
+}
+
+.block {
+    display: block;
+}

@@ -1,0 +1,33 @@
+@import '../../styles/common.scss';
+
+.terms {
+    max-width: 1012px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+
+    .termWrapper {
+        background-color: $white;
+        padding: 15px;
+        margin: 15px 0;
+
+        .termHead {
+            @extend .simpleHead;
+            margin-bottom: 15px;
+            line-height: 22px;
+        }
+
+        .termPara {
+            @extend .normalText;
+            text-align: justify;
+            line-height: 18px;
+        }
+
+        .termList {
+            @extend .normalText;
+            text-align: justify;
+            line-height: 18px;
+            list-style-type: square;
+            padding-bottom: 15px;
+        }
+    }
+}

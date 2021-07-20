@@ -1,0 +1,9 @@
+@import '../styles/variables.scss';
+
+.parent {
+
+    .mainContent {
+        padding-top: 50px;
+        background-color: $white-gray;
+    }
+}

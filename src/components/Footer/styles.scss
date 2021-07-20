@@ -1,0 +1,226 @@
+@import "../../styles/common.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: $some-black;
+    padding: 0 15px;
+
+    .topSection {
+        padding: 15px;
+
+        .topSectionContainer {
+
+            .addressWrapper {
+                vertical-align: top;
+                padding: 0 15px;
+    
+                .brandWrapper {
+                    display: grid;
+    
+                    .brandLogo {
+                        width: 100px;
+                    }
+        
+                    .brandText {
+                        width: 100px;
+                    }
+                }
+    
+                .address {
+                    @extend .roboText;
+                    color: $white;
+                    line-height: 18px;
+                    padding-top: 15px;
+                }
+    
+                .phone {
+                    @extend .itIsLink;
+                    @extend .roboText;
+                    display: block;
+                    color: $white;
+                    line-height: 24px;
+                }
+    
+                .mail {
+                    @extend .itIsLink;
+                    @extend .roboText;
+                    display: block;
+                    color: $white;
+                    line-height: 24px;
+                }
+
+                .fssai {
+                    @extend .itIsLink;
+                    @extend .roboText;
+                    display: block;
+                    color: $white;
+                    line-height: 24px;
+                }
+            }
+    
+            .aboutWrapper {
+                vertical-align: top;
+                padding: 0 30px;
+                width: 50%;
+                border-left: 1px solid $theme2;
+    
+                .aboutUs {
+                    @extend .roboText;
+                    color: $theme2;
+                    padding-bottom: 15px;
+                }
+    
+                .brandDescription {
+                    @extend .roboText;
+                    color: $white;
+                    line-height: 18px;
+                    text-align: justify;
+                }
+            }
+    
+            .socialWrapper {
+                vertical-align: top;
+                padding: 0 30px;
+                border-left: 1px solid $theme2;
+                width: 15%;
+    
+                .socialHead {
+                    @extend .roboText;
+                    color: $theme2;
+                    padding-bottom: 15px;
+                }
+    
+                .socialMedia {
+                    @extend .roboText;
+                    @extend .itIsLink;
+                    display: block;
+                    color: $white;
+                    line-height: 24px;
+                }
+            }
+        }
+        
+    }
+
+    .bottomSection {
+        border-top: 1px solid $theme2;
+
+        .bottomTable {
+            margin: 0 auto;
+            padding: 20px;
+
+            .bottomWrapper {
+    
+                .copyright {
+                    @extend .text;
+                    font-size: 12px;
+                    padding: 0 50px;
+                    text-align: center;
+                    color: $theme2;
+                }
+    
+                .linkWrapper {
+    
+                    .footerItems {
+                        @extend .text;
+                        @extend .itIsLink;
+                        text-align: center;
+                        font-size: 12px;
+                        padding: 0 15px;
+                        color: $white;
+                        border-left: 1px solid $white;
+
+                        &:first-child {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media print, screen and (max-width: 415px) {
+    .footer {
+    
+        .bottomSection {
+    
+            .bottomTable {
+    
+                .bottomWrapper {
+        
+                    .linkWrapper {
+        
+                        .footerItems {
+                            padding: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media print, screen and (max-width: 768px) {
+    .footer {
+    
+        .topSection {
+
+            .topSectionContainer {
+                display: inline-grid;
+
+                .addressWrapper {
+                    text-align: center;
+                    padding-bottom: 15px;
+        
+                    .brandWrapper {
+        
+                        .brandLogo {
+                            margin: 0 auto;
+                        }
+            
+                        .brandText {
+                            margin: 0 auto;
+                        }
+                    }
+                }
+        
+                .aboutWrapper {
+                    border: none;
+                    width: auto;
+                    text-align: center;
+                    padding: 15px 0;
+                    border-top: 1px solid $theme2;
+                    border-bottom: 1px solid $theme2;
+                }
+        
+                .socialWrapper {
+                    border: none;
+                    width: auto;
+                    text-align: center;
+                    padding-top: 15px;
+                }
+            }
+        }
+    
+        .bottomSection {
+    
+            .bottomTable {
+                padding: 0;
+    
+                .bottomWrapper {
+                    display: inline-grid;
+        
+                    .copyright {
+                        padding: 15px 0;
+                    }
+        
+                    .linkWrapper {
+                        padding-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

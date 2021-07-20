@@ -1,0 +1,16 @@
+.sitemap {
+    padding: 30px;
+
+    .linksList {
+        margin: 30px 0;
+
+        .siteLink {
+            color: #000000;
+    
+            &::after {
+                content: "|";
+                margin: 0 5px;
+            }
+        }
+    }
+}

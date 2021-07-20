@@ -1,0 +1,8 @@
+{
+    "presets": ["react", "env", "stage-2"],
+    "plugins": [
+      "add-module-exports",
+      "transform-decorators-legacy",
+      "transform-react-display-name"
+    ]
+}

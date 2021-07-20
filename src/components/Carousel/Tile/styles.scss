@@ -1,0 +1,95 @@
+@import '../../../styles/common.scss';
+
+.carouselTile {
+    @extend .text;
+    @extend .itIsLink;
+    width: 231px;
+    padding: 0 15px;
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in-out;
+    color: $black;
+
+    &.minimalTile {
+        width: 280px;
+    }
+
+    &:last-child {
+        padding: 0 20px 0 15px;
+    }
+    
+    .tileImage {
+        width: 231px;
+        border-radius: 5px;
+        box-shadow: $tileShadow;
+
+        &.minimalImage {
+            width: 280px;
+        }
+    }
+
+    .tileContent {
+        .tagsArea {
+            color: $white;
+            margin-top: 10px;
+            display: inline-block;
+            
+            .starRating {
+                @extend .fontStyles;
+                background: $crispy-green;
+                padding: 5px 5px;
+                margin-right: 5px;
+                float: left;
+
+                .ratingStar {
+                    margin-left: 3px;
+                    height: 10px;
+                }
+            }
+            .tagWrapper {
+                @extend .fontStyles;
+                background: $orange;
+                padding: 5px 5px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                float: left;
+            }
+        }
+
+        .itemTitle {
+            @extend .fontStyles;
+            font-size: 14px;
+            line-height: 14px;
+            width: 231px;
+            margin: 5px 0 10px 0;
+        }
+
+        .price {
+            @extend .fontStyles;
+            font-size: 16px;
+            line-height: 16px;
+            width: 231px;
+            background: $grey-light;
+            padding: 0 10px;
+        }
+    }
+
+    .overlayTitle {
+        @extend .fontStyles;
+        font-size: 16px;
+        line-height: 16px;
+        top: 0px;
+        padding: 10px 5px;
+        width: 270px;
+        color: $black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (hover: hover) {
+    .carouselTile:hover {
+        top:-5px;
+    }
+}

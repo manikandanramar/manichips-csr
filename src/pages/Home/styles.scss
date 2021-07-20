@@ -1,0 +1,715 @@
+@import '../../styles/common.scss';
+
+.home {
+    .homeShowcase {
+        // max-width: 1012px;
+        // margin: 0 auto;
+
+        .festiveWrapper {
+            display: block;
+            padding-top: 5px;
+
+            .coverStyle {
+                background-size: auto 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 400px;
+            }
+        }
+
+        .mainDetails {
+            padding: 15px;
+            text-align: center;
+            background-color: $green-lighter;
+    
+            .chipsTitle {
+                @extend .heading;
+                color: $kinda-green;
+            }
+    
+            .chipsCap {
+                @extend .subHead;
+                padding-bottom: 10px;
+                padding-top: 5px;
+            }
+
+            .mainImage {
+                width: 100%;
+                max-width: 600px;
+            }
+        }
+
+        .subDetails {
+            max-width: 1012px;
+            margin: 0 auto;
+            padding-top: 10px;;
+
+            .detailsTable {
+    
+                .bananaWrapper {
+                    .bananaMan {
+                        width: 300px;
+                    }
+
+                    .shapes {
+                        display: none;
+                    }
+                }
+    
+                .chipsDetails {
+                    padding-left: 50px;
+    
+                    .chipsDetailsHead {
+                        @extend .superHead;
+                        padding-bottom: 15px;
+                        color: $kinda-green;
+                    }
+    
+                    .chipsDetailsDesc {
+                        @extend .normalText;
+                        text-align: justify;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+
+        .features {
+            background-color: $green-lighter;
+            padding-bottom: 5px;
+
+            .featureHead {
+                @extend .superHead;
+                padding: 50px;
+                color: $kinda-green;
+                text-align: center;
+            }
+
+            .featureContainer {
+                max-width: 1012px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+
+                .feature {
+                    margin-bottom: 30px;
+                    width: 50%;
+                    
+                    .featureWrapper {
+        
+                        .featureImageWrapper {
+                            vertical-align: top;
+        
+                            .featureImage {
+                                width: 70px;
+                                height: 70px;
+                                padding: 0 10px 10px 30px;
+                            }
+                        }
+        
+                        .featureDetails {
+                            .featureTitle {
+                                @extend .simpleHead;
+                                padding-bottom: 5px;
+                            }
+            
+                            .featureDescription {
+                                @extend .normalText;
+                                text-align: justify;
+                                line-height: 20px;
+                                padding-right: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .coconutSection {
+            margin-top: 5px;
+            background-color: $white-creamy;
+
+            .coconutTable {
+                max-width: 1012px;
+                margin: 0 auto;
+                border-spacing: 0;
+                width: 100%;
+
+                .coconutContainer {
+                    border: none;
+                    vertical-align: top;
+    
+                    .coconutDetails {
+                        padding: 50px 0 50px 30px;
+    
+                        .coconutHead {
+                            @extend .superHead;
+                            padding-bottom: 15px;
+                            color: $kinda-green;
+                        }
+    
+                        .coconutDescription {
+                            @extend .normalText;
+                            text-align: justify;
+                            line-height: 20px;
+                        }
+                    }
+    
+                    .coconutWrapper {
+                        text-align: right;
+                        width: 50%;
+                        vertical-align: middle;
+    
+                        .coconutImage {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .plantain {
+            background-color: $green-lighter;
+            margin-top: 5px;
+
+            .plantainTable {
+                max-width: 1012px;
+                margin: 0 auto;
+                width: 100%;
+
+                .plantainRow {
+                    width: 100%;
+                    
+                    .plantainWrapper {
+                        .plantainPic {
+                            width: 300px;
+                        }
+                    }
+    
+                    .plantainDetails {
+                        vertical-align: top;
+                        padding: 0 30px 30px 30px;
+    
+                        .plantainHead {
+                            @extend .superHead;
+                            padding: 30px 0;
+                            color: $kinda-green;
+                        }
+    
+                        .plantainDesc {
+                            @extend .normalText;
+                            text-align: justify;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mto {
+            padding: 15px;
+            padding-bottom: 50px;
+            max-width: 1012px;
+            margin: 0 auto;
+
+            .mtoHead {
+                @extend .superHead;
+                padding: 30px 0;
+                color: $black;
+                text-align: center;
+            }
+
+            .mtoDescription {
+                @extend .normalText;
+                text-align: justify;
+                line-height: 20px;
+                padding: 0 15px 30px 15px;
+            }
+
+            .mtoDiagram {
+                display: flex;
+                justify-content: space-around;
+
+                .process {
+                    text-align: center;
+
+                    .processImage {
+                        width: 100px;
+                    }
+
+                    .caption {
+                        @extend .roboText;
+                    }
+                }
+
+                .next {
+                    width: 20px;
+                }
+            }
+        }
+
+        .product {
+            background-color: $grey-light;
+
+            .productTable {
+                max-width: 1012px;
+                margin: 0 auto;
+                border-spacing: 0;
+
+                .productRow {
+                    .productWrapper {
+                        padding: 0;
+                        vertical-align: top;
+                        background-color: $white;
+
+                        .productPic {
+                            width: 100%;
+                        }
+                    }
+
+                    .productDetails {
+                        vertical-align: top;
+                        padding: 15px 30px 30px 30px;
+    
+                        .productHead {
+                            @extend .roboMax;
+                            padding-bottom: 15px;
+                        }
+
+                        .specWrapper {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: left;
+                            padding: 0 0 10px 0;
+
+                            .specification {
+                                @extend .roboText;
+                                padding: 10px 15px;
+                                background-color: $white;
+                                margin-right: 10px;
+                                margin-bottom: 10px;
+                                float: left;
+                                border-bottom: 1px solid $crispy-green;
+                            }
+                        }
+
+                        .productDataHead {
+                            @extend .roboText;
+                            font-weight: bold;
+                            padding-bottom: 10px;
+                        }
+
+                        .productDataWrapper {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: left;
+                            padding: 0 0 15px 0;
+
+                            .productData {
+                                @extend .roboText;
+                                padding: 10px 20px;
+                                background-color: $white;
+                                margin-right: 10px;
+                                margin-bottom: 10px;
+                                border-bottom: 1px solid $orange-some;
+                            }
+                        }
+
+                        .buyButton {
+                            @extend .roboText;
+                            font-weight: bold;
+                            color: $white;
+                            width: 200px;
+                            padding: 10px;
+                            cursor: pointer;
+                        }
+
+                        .channels {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: left;
+                            margin-top: 10px;
+
+                            .channel {
+                                @extend .itIsLink;
+                                @extend .roboText;
+                                color: $theme2;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .feedback {
+            background-color: $white;
+            height: 100px;
+        }
+    }
+}
+
+@media print, screen and (max-width: 415px) {
+    .home {
+        .homeShowcase {
+            .festiveWrapper {
+                
+                .coverStyle {
+                    background-size: auto 150px;
+                    height: 150px;
+                }
+            }
+
+            .subDetails {
+                padding-top: 0;
+
+                .detailsTable {
+                    display: inline-grid;
+                    text-align: center;
+
+                    .bananaWrapper {
+                        position: relative;
+                        height: 150px;
+
+                        .bananaMan {
+                            z-index: 5;
+                            width: 150px;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+
+                        .shapes {
+                            z-index: 0;
+                            display: block;
+                            width: 300px;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+                    }
+
+                    .chipsDetails {
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .features {
+                .featureContainer {
+                    display: block;
+
+                    .feature {
+                        width: auto;
+
+                        .featureWrapper {
+
+                            .featureImageWrapper {
+                                .featureImage {
+                                    padding-left: 10px;
+                                }
+                            }
+            
+                            .featureDetails {
+                
+                                .featureDescription {
+                                    padding-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .coconutSection {
+    
+                .coconutTable {
+    
+                    .coconutContainer {
+                        display: flex;
+                        flex-direction: column-reverse;
+        
+                        .coconutDetails {
+                            padding: 30px 15px 50px 15px;
+        
+                            .coconutHead {
+                                text-align: center;
+                            }
+                        }
+        
+                        .coconutWrapper {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .plantain {
+                padding-top: 0;
+    
+                .plantainTable {
+                    width: 100%;
+                    
+                    .plantainRow {
+                        display: inline-grid;
+                        text-align: center;
+    
+                        .plantainWrapper {
+                            padding-top: 30px;
+    
+                            .plantainPic {
+                                width: 150px;
+                            }
+                        }
+        
+                        .plantainDetails {
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+
+            .mto {
+
+                .mtoDescription {
+                    padding: 0 0 15px 0;
+                }
+
+                .mtoDiagram {
+                    .process {
+                        .processImage {
+                            width: 50px;
+                        }
+                    }
+
+                    .next {
+                        width: 10px;
+                    }
+                }
+            }
+
+            .product {
+                .productTable {
+                    width: 100%;
+
+                    .productRow {
+                        display: inline-grid;
+                        text-align: center;
+                        width: 100%;
+
+                        .productWrapper {
+                            width: 100%;
+                            display: table-cell;
+                            background: none;
+
+                            .productPic {
+                                width: 300px;
+                            }
+                        }
+    
+                        .productDetails {
+                            padding: 15px 15px 30px 15px;
+
+                            .specWrapper {
+                                justify-content: center;
+                            }
+
+                            .productDataHead {
+                                display: none;
+                            }
+
+                            .productDataWrapper {
+                                display: none;
+                            }
+
+                            .channels {
+                                justify-content: center;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media print, screen and (min-width: 415px) and (max-width: 768px) {
+    .home {
+        .homeShowcase {
+            .festiveWrapper {
+                
+                .coverStyle {
+                    background-size: auto 200px;
+                    height: 200px;
+                }
+            }
+
+            .subDetails {
+                padding-top: 0;
+
+                .detailsTable {
+                    display: inline-grid;
+                    text-align: center;
+
+                    .bananaWrapper {
+                        position: relative;
+                        height: 200px;
+
+                        .bananaMan {
+                            z-index: 5;
+                            width: 200px;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+
+                        .shapes {
+                            z-index: 0;
+                            display: block;
+                            width: 370px;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
+                    }
+
+                    .chipsDetails {
+                        padding: 0 30px 30px 30px;
+                    }
+                }
+            }
+
+            .features {
+                .featureContainer {
+                    display: block;
+
+                    .feature {
+                        width: auto;
+                    }
+                }
+            }
+
+            .coconutSection {
+    
+                .coconutTable {
+    
+                    .coconutContainer {
+                        display: flex;
+                        flex-direction: column-reverse;
+        
+                        .coconutDetails {
+                            padding: 30px 30px 50px 30px;
+        
+                            .coconutHead {
+                                text-align: center;
+                            }
+                        }
+        
+                        .coconutWrapper {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .plantain {
+                padding-top: 0;
+    
+                .plantainTable {
+
+                    .plantainRow {
+                        display: inline-grid;
+                        text-align: center;
+                        width: 100%;
+    
+                        .plantainWrapper {
+                            padding-top: 30px;
+    
+                            .plantainPic {
+                                width: 200px;
+                            }
+                        }
+        
+                        .plantainDetails {
+                            padding: 0 30px 30px 30px;
+                        }
+                    }
+                }
+            }
+
+            .mto {
+                .mtoDescription {
+                    padding: 0 15px 15px 15px;
+                }
+ 
+                .mtoDiagram {
+                    .process {
+                        .processImage {
+                            width: 70px;
+                        }
+                    }
+
+                    .next {
+                        width: 15px;
+                    }
+                }
+            }
+
+            .product {
+                .productTable {
+
+                    .productRow {
+    
+                        .productDetails {
+
+                            .productDataHead {
+                                display: none;
+                            }
+
+                            .productDataWrapper {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media print, screen and (min-width: 768px) and (max-width: 1012px) {
+    .home {
+        .homeShowcase {
+            .subDetails {
+
+                .detailsTable {
+
+                    .bananaWrapper {
+
+                        .shapes {
+                            display: none;
+                        }
+                    }
+
+                    .chipsDetails {
+                        padding: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+

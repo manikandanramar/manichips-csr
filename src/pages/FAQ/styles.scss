@@ -1,0 +1,29 @@
+@import '../../styles/common.scss';
+
+.faq {
+    max-width: 1012px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+
+    .faqHeading {
+        @extend .superHead;
+        padding: 15px 0 0 15px;
+    }
+
+    .faqWrapper {
+        background-color: $white;
+        padding: 15px;
+        margin: 15px 0;
+
+        .faqQuestion {
+            @extend .simpleHead;
+            margin-bottom: 15px;
+            line-height: 22px;
+        }
+
+        .faqAnswer {
+            @extend .normalText;
+            text-align: justify;
+            line-height: 18px;}
+    }
+}

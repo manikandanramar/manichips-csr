@@ -1,0 +1,28 @@
+@import '../../styles/common.scss';
+
+.pack {
+
+    .packHead {
+        @extend .fontStyles;
+        padding: 20px 0;
+        margin: 0 15px;
+        border-bottom: 1px solid $grey-bright;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .packList {
+        padding-bottom: 15px;
+    }
+}
+
+@media print, screen and (min-width: 415px) {
+    .pack {
+        .packList {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 10px;
+            margin: 0 5px;
+        }
+    }
+}

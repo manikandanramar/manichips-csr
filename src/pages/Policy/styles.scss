@@ -1,0 +1,24 @@
+@import '../../styles/common.scss';
+
+.policy {
+    max-width: 1012px;
+    margin: 0 auto;
+
+    .policyWrapper {
+        background-color: $white;
+        padding: 15px;
+        margin: 15px 0;
+
+        .policyHead {
+            @extend .simpleHead;
+            margin-bottom: 15px;
+            line-height: 22px;
+        }
+
+        .policyPara {
+            @extend .normalText;
+            text-align: justify;
+            line-height: 18px;
+        }
+    }
+}

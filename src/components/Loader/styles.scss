@@ -1,0 +1,33 @@
+@import '../../styles/variables.scss';
+
+.dualRing {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.dualRing:after {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid $theme1;
+  border-color: $theme1 $theme1 $theme1 transparent;
+  animation: dualRing 1.2s linear infinite;
+}
+
+@keyframes dualRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

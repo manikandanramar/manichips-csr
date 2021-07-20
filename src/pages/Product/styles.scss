@@ -1,0 +1,264 @@
+@import '../../styles/common.scss';
+
+.productContainer {
+
+    .product {
+        max-width: 1012px;
+        margin: 0 auto;
+
+        .theMain {
+            padding: 10px;
+        }
+
+        .productTable {
+            width: 100%;
+            margin: 0;
+            border-spacing: 0;
+
+            .productDataRow {
+
+                .productImageColumn {
+                    vertical-align: top;
+                    background-color: $white;
+                    padding: 10px;
+                    box-shadow: $mid-shadow;
+                    
+                    .activeWrapper {
+                        height: 278px;
+                        width: 278px;
+                        margin: 10px auto;
+                        display: flex;
+                        justify-content: center;
+            
+                        .productImage {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+            
+                    .slotHolder {
+                        width: 260px;
+                        display: flex;
+                        overflow: scroll;
+                        border: 1px solid $white-creamy;
+                        padding: 3px 0;
+            
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+            
+                        .imageSlot {
+                            height: 60px;
+                            width: 60px;
+                            margin: 0 5px;
+                            display: flex;
+                            justify-content: center;
+                            padding: 3px;
+            
+                            .productImage {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+            
+                            &.active {
+                                height: 56px;
+                                width: 56px;
+                                border: 2px solid $redish-orange;
+                            }
+                        }
+                    }
+                }
+
+                .productDataColumn {
+                    vertical-align: top;
+                    padding: 0;
+
+                    .productDatas {
+                        background-color: $white;
+                        padding: 10px;
+                        box-shadow: $mid-shadow;
+                        margin-left: 10px;
+
+                        .productTitle {
+                            @extend .roboMax;
+                            padding-bottom: 15px;
+                            text-align: left;
+                        }
+
+                        .specifications {
+                            display: inline-block;
+                            width: 100%;
+
+                            .spec {
+                                @extend .normalText;
+                                float: left;
+                                padding: 5px;
+                                color: $white;
+                                background-color: $orange;
+                                margin-right: 5px;
+                                margin-bottom: 5px;
+
+                                &:last-child {
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        .ingreWrapper {
+                            @extend .normalText;
+                            line-height: 20px;
+                            display: inline-block;
+                            margin-top: 15px;
+                            width: 100%;
+
+                            .ingredientsHead {
+                                padding: 0 5px;
+                                font-weight: bold;
+                                float: left;
+
+                                &::after {
+                                    content: ":";
+                                }
+                            }
+
+                            .ingredients {
+                                padding: 0 5px;
+                                float: left;
+                                color: $white;
+                                background-color: $kinda-green;
+                                margin-right: 5px;
+                                margin-bottom: 5px;
+
+                                &:last-child {
+                                    border: none;
+                                }
+                            }
+                        }
+
+                        .highlightList {
+                            .highlight {
+                                @extend .normalText;
+                                line-height: 20px;
+                                text-align: left;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        .buyNowButton {
+                            @extend .roboText;
+                            display: flex;
+                            justify-content: center;
+                            font-weight: bold;
+                            color: $white;
+                            width: 200px;
+                            padding: 10px;
+                            cursor: pointer;
+                        }
+
+                        .channels {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: left;
+                            margin-top: 10px;
+                            margin-bottom: 3px;
+
+                            .aChannel {
+                                @extend .itIsLink;
+                                @extend .roboText;
+                                color: $theme2;
+                                padding: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .platforms {
+            background-color: $white;
+            margin-top: 15px;
+            box-shadow: $mid-shadow;
+            padding: 10px;
+    
+            .availableAt {
+                @extend .normalText;
+                font-weight: bold;
+                padding: 10px 0 20px 0;
+                border-bottom: 1px solid $redish-orange;
+                text-align: center;
+            }
+    
+            .channel {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 15px;
+    
+                .channelLink {
+                    padding: 15px;
+    
+                    &:hover {
+                        box-shadow: $pro-shadow;
+                    }
+    
+                    .channelImage {
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@media print, screen and (max-width: 615px) {
+    .productContainer {
+        .productTable {
+
+            .productDataRow {
+                display: inline-grid;
+                width: 100%;
+
+                .productDataColumn {
+
+                    .productDatas {
+                        margin-left: 0 !important;
+                        margin-top: 15px;
+
+                        .buyNowButton {
+                            margin: 0 auto;
+                        }
+
+                        .channels {
+                            justify-content: center !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media print, screen and (min-width: 1000px) {
+    .productContainer {
+
+        .product {
+            .productTable {
+                .productDataRow {
+                    .productImageColumn {
+
+                        .activeWrapper {
+                            height: 500px;
+                            width: 500px;
+                        }
+            
+                        .slotHolder {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
